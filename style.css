@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+  
+}
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 320px;
+  max-width: 800px;
+  margin:auto;
+}
+
+
+
+input[type="submit"] {
+  font-weight: bold;
+  padding: 6px 10px;
+  border:1px solid #000;
+  background: #2353bb;
+  color:#fff;
+}
+
+.titulo {
+  background-color: rgb(187, 187, 187);
+}
+.compra {
+  background-color: rgb(187, 187, 187);
+ 
+
+}
+.container {
+  display: grid
+  
+}
+  
+  @media screen and (max-width: 1024px) {
+  
+    body {
+      /* max-width: 1024px; */
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    body {
+      /* max-width: 768px; */
+      margin: auto;
+    }
+  }
+  
+  
+  @media screen and (max-width: 426px) {
+  
+    body {
+      margin: auto;
+    }

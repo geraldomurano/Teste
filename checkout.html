@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <title>Checkout RCHLO</title>
+</head>
+<body>
+    <main>
+    <div class="titulo">    
+    <!-- Título da página (em destaque) -->
+    <h1>Ótima escolha!</h1> 
+
+    <!-- Texto logo abaixo do título da página -->
+    <p>Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.</p>
+    </div>
+    <!-- Subtítulo, referente ao trecho sobre os dados do produto -->
+   <br>
+       <div class="compra">
+    <h2> <strong>Sua compra</strong></h2>
+       </div>
+    <!-- início dos dados do produto -->
+    <div > 
+    <!-- imagem do produto -->
+    <img id="roupa" src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg" alt="Camiseta" width="150x400"> 
+
+    <!-- nome do produto -->
+    <h3>Produto: </h3>
+        <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+    <!-- cor do produto -->
+    <h3>Cor: </h3>
+        <p>Branco</p> 
+
+    <!-- tamanho do produto -->
+    <h3>Tamanho: </h3>
+       <p> G</p>
+
+    <!-- preço do produto -->
+    <h3>Preço: </h3>
+        <p>$ 69,90</p>
+    </div>
+
+<!-- fim dos dados do produto -->
+
+<!-- início do formulário -->
+
+<!-- fornulario de quantidade de produtos e valor total-->
+
+    <form action="">
+        
+            <div class=container>
+            Quantidade:<br>  <input type="number" id="quantidade" required><br>
+                     
+            Total: <br> <input type="number" placeholder="0" id="total"  disabled>
+            </div>
+        
+    </form>
+<!-- Título da seção de dados pessoais do formulário-->
+        
+
+    <form action=""> 
+           
+            
+            <legend> Dados Pessoais </legend>
+       
+            <div class="container">
+            Nome Completo: <br> <input id="Nome" type="text" maxlenght="200" required><br>
+            </div>
+       
+            <div class="container">
+            E-mail: <br> <input id="email" type="email" placeholder="exemplo@email.com" maxlenght="300" required><br>
+            </div>    
+      
+            <div class="container">    
+        CPF:<br>  <input id="cpf" type="text" placeholder="000.000.000-00" required><br>
+            </div>    
+     
+<!-- colocar checkbox aqui -->
+       
+            <div class=container></div>            
+            <input id="checkout" type="checkbox" >
+            <label for="checkout">Quero receber a newsletter da RCHLO!</label>
+            </div>    
+        
+    </form>
+        
+<!-- Título da seção de cartão de crédito do formulário--> 
+        
+       
+            <legend> Cartão de Crédito </legend>
+        
+            <div class=container>  
+            Número do Cartão: <br> <input type="text" minlength="16" maxlength="16" placeholder="0000000000000000" required id="cc"><br>
+            </div>    
+       
+            <div class=container>
+            CVC: <br> <input id="cvv" type="text" minlength="3" maxlength="3" required><br>
+            </div>
+   
+            <div class=container>
+            Bandeira: <br> <select name="bandeira" id="operadora" required> 
+            <option>Selecione uma opção</option>
+            <option>Master</option>
+            <option>Visa</option>
+            <option>ELO</option>
+            </select><br></div>
+            <div class=container>
+            Validade: <br> <input id="data" type="date" required>
+       
+
+
+<!-- botão de submissão do formulário com o label a seguir -->        
+            <div>
+            <input type="submit" value="Confirmar Pedido">
+            </div>  
+       
+    </form>
+      
+<!-- fim do formulário -->
+<script src="checkout.js"></script>
+</main>
+</body>
+</html>
